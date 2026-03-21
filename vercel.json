@@ -1,5 +1,14 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "builds": [
+    {
+      "src": "stellar-portfolio-hub-main/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "stellar-portfolio-hub-main/index.html"
+    }
   ]
 }
